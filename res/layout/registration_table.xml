@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" >
+
+<TableLayout
+    android:id="@+id/tableLayout1"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+ 
+    <!-- 2 columns -->
+    <TableRow
+        android:id="@+id/tableRow1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5dip" >
+ 
+        <TextView
+            android:id="@+id/textView1"
+            android:text="First Name"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        
+
+        <EditText
+            android:id="@+id/edt_reg_FName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+             android:inputType="textPersonName"
+            android:ems="10" >
+
+        </EditText>
+
+    </TableRow>
+ 
+  <TableRow
+        android:id="@+id/tableRow2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5dip" >
+ 
+        <TextView
+            android:id="@+id/txtLname"
+            android:text="Last Name"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <EditText
+            android:id="@+id/edt_reg_LName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+             android:inputType="textPersonName"
+            android:ems="10" >
+
+          
+        </EditText>
+
+    </TableRow>
+     <TableRow
+        android:id="@+id/tableRow3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5dip" >
+ 
+        <TextView
+            android:id="@+id/txtEmail"
+            android:text="Email"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <EditText
+            android:id="@+id/edt_reg_Email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress"
+            android:ems="10" >
+
+        </EditText>
+
+    </TableRow>
+         <TableRow
+        android:id="@+id/tabMobile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5dip" >
+ 
+        <TextView
+            android:id="@+id/txtmNumber"
+            android:text="Mobile Number"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <EditText
+            android:id="@+id/edt_reg_MNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="phone"
+            android:ems="10" >
+
+            <requestFocus />
+        </EditText>
+
+    </TableRow>
+     <TableRow
+        android:id="@+id/tabpwd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5dip" >
+ 
+        <TextView
+            android:id="@+id/txtpsd"
+            android:text="Passowrd"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+
+        <EditText
+            android:id="@+id/edt_reg_Pwd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:ems="10" >
+
+        </EditText>
+
+    </TableRow>
+     <TableRow
+        android:id="@+id/tabAlogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5dip" >
+ 
+        <TextView
+            android:id="@+id/txtAlogin"
+            android:text="Auto Login"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <CheckBox
+            android:id="@+id/chkALogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Auto Login" />
+       
+
+    </TableRow>
+     <TableRow
+        android:id="@+id/tabScode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:padding="5dip" >
+ 
+        <TextView
+            android:id="@+id/txtLAttempt"
+            android:text="Security Code"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <EditText
+            android:id="@+id/edt_reg_Scode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:ems="10" >
+
+        </EditText>
+
+    </TableRow>
+    
+        <TableRow
+        android:id="@+id/tabAdmin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5dip" >
+ 
+        <TextView
+            android:id="@+id/txtadmin"
+            android:text="As Admin"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <CheckBox
+            android:id="@+id/checkadmin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Admin" />
+
+    </TableRow>
+    <View
+        android:layout_height="2dip"
+        android:background="#000000" />
+    <LinearLayout
+        android:id="@+id/tableRow5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center"
+        android:gravity="bottom|center"
+        android:padding="5dip" >
+
+        <Button
+            android:id="@+id/btn_reg_submit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Button" />
+        
+    </LinearLayout>
+ 
+</TableLayout>
+</ScrollView>

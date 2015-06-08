@@ -1,0 +1,182 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+     >
+      <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" 
+        android:id="@+id/loginLastAttempt">
+    
+     <TextView
+        	android:id="@+id/txt_lstLogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_below="@+id/lay_pId"
+            android:text="Bid Name :"
+            android:layout_marginLeft="5dp"
+             />
+     <EditText
+            android:id="@+id/edt_tbibnow_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            >           
+        </EditText>
+     
+     </LinearLayout>
+     <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" 
+        android:gravity="center|left"
+        android:layout_below="@+id/loginLastAttempt"
+        android:id="@+id/lay_pId">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:text="Product ID                 " />
+
+         <Spinner
+        android:id="@+id/osversions"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+        
+        
+    </LinearLayout>
+    
+  <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" 
+       android:id="@+id/lay_pcode" 
+        android:layout_below="@+id/lay_pId"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:text="Product Code           " />
+
+        <EditText
+            android:id="@+id/edt_tbid_aproduct_code"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:editable="false"
+            >           
+        </EditText>
+        
+    </LinearLayout>
+    
+  
+  
+      <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/lay_pname" 
+        android:layout_below="@+id/lay_pcode"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:text="Product Name          " />
+
+        <EditText
+            android:id="@+id/edt_tbid_aproduct_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+             android:editable="false"
+            >           
+        </EditText>
+        
+    </LinearLayout>
+      <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" 
+        android:id="@+id/lay_pdes" 
+        android:layout_below="@+id/lay_pname"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:text="Product Description" />
+
+        <EditText
+            android:id="@+id/edt_tbid_aproduct_des"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+             android:editable="false"
+            >           
+        </EditText>
+        
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" 
+       android:id="@+id/lay_pPrice" 
+        android:layout_below="@+id/lay_pdes"
+        >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:text="Product Prices           " />
+
+        <EditText
+            android:id="@+id/edt_tbid_aproduct_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            >           
+        </EditText>
+        
+    </LinearLayout>
+
+
+    <View
+        android:id="@+id/sep"
+        android:layout_below="@+id/lay_pPrice"
+        android:layout_height="1dip"
+        android:layout_marginLeft="2dp"
+        android:layout_marginRight="2dp"
+        android:layout_width="fill_parent"
+        android:background="#000000" />
+
+    <Button
+        android:id="@+id/btn_tbidAP_Add_Prod"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/sep"
+        android:layout_marginTop="20dp"
+        android:text="Add Product into Cart" />
+    <!-- <Button
+        android:id="@+id/btn_tbidAP_Bidnow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_tbidAP_Add_Prod"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="Bid Product" />
+     -->
+    
+</RelativeLayout>
